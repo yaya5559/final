@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from "framer-motion";
 
 
-import Slide1 from './sliders/slide1'
+import Slide1 from './sliders/Slide1'
 import Slide2 from './sliders/Eda'
 import Slide3 from './sliders/Slide3'
 import "./style/style.css"
