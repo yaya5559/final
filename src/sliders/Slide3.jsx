@@ -71,7 +71,7 @@ export default function Slide3() {
         </h1>
         <p
           style={{
-            color: '#ffffff',
+            color: 'rgba(0,0,0,0.07)',
             fontSize: '1.125rem',
             maxWidth: '600px',
             margin: '0 auto',
@@ -97,7 +97,7 @@ export default function Slide3() {
           style={{
             padding: '0.85rem 1.5rem',
             borderRadius: '12px',
-            border: '1.5px solid #bbb',
+            border: '1.5px solid rgba(0,0,0,0.07)',
             backgroundColor: 'rgba(0,0,0,0.07)',
             fontSize: '1.125rem',
             fontWeight: 500,
@@ -108,16 +108,16 @@ export default function Slide3() {
             maxWidth: '90%',
           }}
           onFocus={(e) => {
-            e.target.style.borderColor = '#0077ff';
+            e.target.style.borderColor = 'rgb(246, 241, 241)';
             e.target.style.boxShadow = '0 0 8px #0077ff';
           }}
           onBlur={(e) => {
-            e.target.style.borderColor = '#bbb';
+            e.target.style.borderColor ='rgb(255, 255, 255)';
             e.target.style.boxShadow = '0 6px 15px rgba(0,0,0,0.07)';
           }}
         >
           {visualizations.map((vis) => (
-            <option key={vis.key} value={vis.key}>
+            <option key={vis.key} value={vis.key} className='custom-option'>
               {vis.label}
             </option>
           ))}
@@ -147,7 +147,7 @@ export default function Slide3() {
             exit={{ opacity: 0, scale: 0.97 }}
             transition={{ duration: 0.4 }}
             style={{
-              backgroundColor: '#fff',
+              backgroundColor: '#rgba(0,0,0,0.07)',
               borderRadius: '16px',
               boxShadow: '0 16px 36px rgba(0, 0, 0, 0.12)',
               overflow: 'hidden',

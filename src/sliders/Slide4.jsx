@@ -138,7 +138,7 @@ export default function Slide4() {
           }}
         >
           {visualizations.map((vis) => (
-            <option key={vis.key} value={vis.key}>
+            <option key={vis.key} value={vis.key} className='custom-option'>
               {vis.label}
             </option>
           ))}

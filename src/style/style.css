@@ -269,3 +269,144 @@ slide5
   line-height: 1.5;
 }
 
+/* 
+conclusion */
+
+.conclusion-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background: linear-gradient(to bottom right, #111827, #1f2937);
+    color: white;
+    text-align: center;
+  }
+  
+  .conclusion-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+  }
+  
+  .conclusion-description {
+    font-size: 1.125rem;
+    color: #d1d5db;
+    margin-bottom: 3rem;
+    max-width: 36rem;
+  }
+  
+  .team-card {
+    background-color: #374151;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    max-width: 28rem;
+  }
+  
+  .team-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .team-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .team-member {
+    display: flex;
+    justify-content: space-between;
+    color: #f3f4f6;
+    margin-bottom: 0.5rem;
+  }
+  
+  .team-role {
+    font-size: 0.875rem;
+    font-style: italic;
+    color: #d1d5db;
+  }
+  
+/*nnn*/
+.custom-option {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+/* Harmonized DataPreview with dark slide design */
+
+.data-preview-container {
+  padding: 2rem;
+  margin: 3rem auto;
+  max-width: 1000px;
+  background-color: #1c1c1c;
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+  color: #f5f5f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.data-title {
+  color: #f0f0f0;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.data-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #d1d5db;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  background-color: #262626;
+  padding: 1.2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  color: #e5e7eb;
+}
+
+.data-table th,
+.data-table td {
+  padding: 0.85rem;
+  border: 1px solid #333;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: #1f2937;
+  color: #f9fafb;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
+.data-table tr:nth-child(odd) {
+  background-color: #1f1f1f;
+}
+
+.table-note {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
