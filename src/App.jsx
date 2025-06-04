@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from "framer-motion";
-
-
 import Slide1 from './sliders/Slide1'
 
 import Slide3 from './sliders/Slide3'

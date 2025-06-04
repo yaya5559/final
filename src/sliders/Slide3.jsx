@@ -186,7 +186,6 @@ export default function Slide3() {
               padding: '2rem',
               boxShadow: '0 16px 36px rgba(0, 0, 0, 0.12)',
               fontSize: '1rem',
-              
               lineHeight: 1.6,
               display: 'flex',
               flexDirection: 'column',
