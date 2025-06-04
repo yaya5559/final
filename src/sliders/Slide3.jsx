@@ -11,15 +11,15 @@ const visualizations = [
   },
   {
     key: 'heatmap',
-    label: 'Funding per Person & Homeless Rate 🗺️',
-    src: 'map2.html',
+    label: 'funding per person map🗺️',
+    src: 'funding_per_person_map.html',
     description:
       'The heat map displays the spatial distribution of values across different regions. It’s ideal for identifying geographic patterns.',
   },
   {
     key: 'bar',
-    label: 'Bar Chart 📉',
-    src: 'barChart.html',
+    label: 'scatterplot of funding per person and homeless rate📉',
+    src: 'scatterplot_of_funding_per_person_and_homeless_rate.html',
     description:
       'This bar chart compares categorical data, highlighting differences in magnitude or frequency. Great for quick comparisons.',
   },
@@ -98,7 +98,7 @@ export default function Slide3() {
             padding: '0.85rem 1.5rem',
             borderRadius: '12px',
             border: '1.5px solid #bbb',
-            backgroundColor: '#fff',
+            backgroundColor: 'rgba(0,0,0,0.07)',
             fontSize: '1.125rem',
             fontWeight: 500,
             cursor: 'pointer',
