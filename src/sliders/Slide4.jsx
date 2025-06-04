@@ -1,31 +1,52 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import "../style/style.css";
 
 const visualizations = [
   {
-    key: 'scatter',
-    label: 'Homeless Rate 📊',
-    src: 'map1.html',
-    description:
-      'This scatter plot visualizes relationships between two numeric variables. It helps identify clusters, trends, and outliers across regions.',
+    label: "median gap bar plot",
+    key: "geomcol",
+    src: "geom.html",
+    description: "dsec",
   },
   {
-    key: 'heatmap',
-    label: 'Funding per Person & Homeless Rate 🗺️',
-    src: 'map2.html',
-    description:
-      'The heat map displays the spatial distribution of values across different regions. It’s ideal for identifying geographic patterns.',
+    label: "share of homeless black",
+    key: "map1",
+    src: "Black.html",
+    description: "dsec",
   },
   {
-    key: 'bar',
-    label: 'Bar Chart 📉',
-    src: 'barChart.html',
-    description:
-      'This bar chart compares categorical data, highlighting differences in magnitude or frequency. Great for quick comparisons.',
+    label: "share of homeless american indian/alaska native",
+    key: "map2",
+    src: "Indian.html",
+    description: "desc",
   },
+  {
+    label: "share of homeless asian",
+    key: "map3",
+    src: "asian.html",
+    description: "desc",
+  },
+  {
+    label: "share of homeless multi-racial",
+    key: "map6",
+    src: "multir.html",
+    description: "desc",
+  },
+  {
+    label: "share of homeless white",
+    key: "map4",
+    src: "white.html",
+    description: "desc",
+  },
+ 
+  
+
 ];
 
-export default function Slide3() {
+
+
+export default function Slide4() {
   const [selectedVis, setSelectedVis] = useState(visualizations[0]);
 
   const handleChange = (e) => {
@@ -98,7 +119,7 @@ export default function Slide3() {
             padding: '0.85rem 1.5rem',
             borderRadius: '12px',
             border: '1.5px solid #bbb',
-            backgroundColor: '#fff',
+            backgroundColor: 'rgba(0, 0, 0, 0.07)',
             fontSize: '1.125rem',
             fontWeight: 500,
             cursor: 'pointer',

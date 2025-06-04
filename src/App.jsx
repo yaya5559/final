@@ -3,16 +3,17 @@ import { AnimatePresence, motion } from "framer-motion";
 
 
 import Slide1 from './sliders/Slide1'
-import Slide2 from './sliders/Eda'
+
 import Slide3 from './sliders/Slide3'
 import "./style/style.css"
-import Eda from './sliders/Eda';
-import Pca from './sliders/Pca';
-import Linear from './sliders/Linear';
-import Linear2 from './sliders/Linear2';
+import Slide4 from './sliders/Slide4';
+import Slide5 from './sliders/Slide5';
+import Slide6 from './sliders/Slide6';
+import Slide7 from './sliders/Slide7';
 
 
-const slides = [<Slide1/>, <Slide3/>, <Eda/>, <Pca/>, <Linear/>, <Linear2/>]
+
+const slides = [<Slide1/>, <Slide3/>, <Slide4/>, <Slide5/>, <Slide6/>, <Slide7/>]
 
 const variants = {
   enter: (direction) => ({

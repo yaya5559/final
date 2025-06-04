@@ -1,31 +1,52 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import "../style/style.css";
 
 const visualizations = [
   {
-    key: 'scatter',
-    label: 'Homeless Rate 📊',
-    src: 'map1.html',
-    description:
-      'This scatter plot visualizes relationships between two numeric variables. It helps identify clusters, trends, and outliers across regions.',
+    label: "Pca1",
+    key: "1",
+    src: "pca1.html",
+    description: "dsec",
   },
   {
-    key: 'heatmap',
-    label: 'Funding per Person & Homeless Rate 🗺️',
-    src: 'map2.html',
-    description:
-      'The heat map displays the spatial distribution of values across different regions. It’s ideal for identifying geographic patterns.',
+    label: "Pca2",
+    key: "2",
+    src: "pca2.html",
+    description: "dsec",
   },
   {
-    key: 'bar',
-    label: 'Bar Chart 📉',
-    src: 'barChart.html',
-    description:
-      'This bar chart compares categorical data, highlighting differences in magnitude or frequency. Great for quick comparisons.',
+    label: "Pca3",
+    key: "3",
+    src: "pca3.html",
+    description: "desc",
   },
+  {
+    label: "Pca4",
+    key: "4",
+    src: "pca4.html",
+    description: "desc",
+  },
+  {
+    label: "Pca5",
+    key: "5",
+    src: "pca5.html",
+    description: "desc",
+  },
+  {
+    label: "pca6",
+    key: "6",
+    src: "pca6.html",
+    description: "desc",
+  },
+ 
+  
+
 ];
 
-export default function Slide3() {
+
+
+export default function Slide6() {
   const [selectedVis, setSelectedVis] = useState(visualizations[0]);
 
   const handleChange = (e) => {
@@ -98,7 +119,7 @@ export default function Slide3() {
             padding: '0.85rem 1.5rem',
             borderRadius: '12px',
             border: '1.5px solid #bbb',
-            backgroundColor: '#fff',
+            backgroundColor: 'rgba(0, 0, 0, 0.07)',
             fontSize: '1.125rem',
             fontWeight: 500,
             cursor: 'pointer',
