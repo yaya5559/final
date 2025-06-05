@@ -7,7 +7,7 @@ const visualizations = [
     label: "median gap bar plot",
     key: "geomcol",
     src: "geom.html",
-    description: "",
+    description: "dsec",
   },
   {
     label: "share of homeless black",
@@ -19,25 +19,25 @@ const visualizations = [
     label: "share of homeless american indian/alaska native",
     key: "map2",
     src: "Indian.html",
-    description: "",
+    description: "desc",
   },
   {
     label: "share of homeless asian",
     key: "map3",
     src: "asian.html",
-    description: "",
+    description: "desc",
   },
   {
     label: "share of homeless multi-racial",
     key: "map6",
     src: "multir.html",
-    description: "",
+    description: "desc",
   },
   {
     label: "share of homeless white",
     key: "map4",
     src: "white.html",
-    description: "",
+    description: "desc",
   },
  
   
@@ -99,7 +99,7 @@ export default function Slide4() {
             lineHeight: 1.4,
           }}
         >
-          Select a chart type to view its corresponding visualization.
+          Select a chart type to view its corresponding visualization and description.
         </p>
       </header>
 
@@ -228,7 +228,7 @@ export default function Slide4() {
                 gap: '0.5rem',
               }}
             >
-              
+              📌 Description
             </h3>
             <p color='ffffff'>{selectedVis.description}</p>
           </motion.div>

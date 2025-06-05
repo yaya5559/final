@@ -7,44 +7,44 @@ const visualizations = [
     label: "Pca1",
     key: "1",
     src: "pca1.html",
-    description: "dsec",
+    description: "High = urban and large percent PoC. Low = rural, white, high housing availability",
+
   },
   {
     label: "Pca2",
     key: "2",
     src: "pca2.html",
-    description: "dsec",
+    description: "High = wealthy, lots of kids. Low = impoverished, few children.",
   },
   {
     label: "Pca3",
     key: "3",
     src: "pca3.html",
-    description: "desc",
+    description: "High = rural, poor job access. Low = urban, good job access",
   },
   {
     label: "Pca4",
     key: "4",
     src: "pca4.html",
-    description: "desc",
+    description: "High = older, wealthy. Low = higher density, higher housing cost burden, high povery",
   },
   {
     label: "Pca5",
     key: "5",
     src: "pca5.html",
-    description: "desc",
+    description: "High score = suburban. Lower score = rural or large city.",
   },
   {
     label: "pca6",
     key: "6",
     src: "pca6.html",
-    description: "desc",
+    description: "High = not Latina/o, middle aged, overcrowded. Low = Latina/o communities, younger.",
   },
  
 ];
 
 const allImages = [
-  "funding_per_person_model.png", "homelessness_model.png", "loadings.png",
-  "variables.png"
+  "funding_per_person_model.png", "homelessness_model.png", "loadings.png"
 ];
 
 export default function Slide7() {
@@ -62,9 +62,9 @@ export default function Slide7() {
       boxSizing: 'border-box'
     }}>
       <header style={{ textAlign: 'center', marginBottom: '1rem' }}>
-        <h1 style={{ fontSize: '2.25rem', fontWeight: 700 }}>Explore Visualizations & Images</h1>
+        <h1 style={{ fontSize: '2.25rem', fontWeight: 700 }}>Principal Component Analysis and Linear Model</h1>
         <p style={{ fontSize: '1.125rem', maxWidth: '600px', margin: '0 auto' }}>
-          Choose a VPlot and a separate image to compare or complement data views.
+          {selectedVis.description}
         </p>
       </header>
 

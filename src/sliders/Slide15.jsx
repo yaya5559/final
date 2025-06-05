@@ -28,10 +28,11 @@ function Slide15({ csvPath  }) {
        
       <p className="data-description">
         <strong>
-        This dataset is tidy, structured, and contains key demographic, funding, and geographic data 
-        to support meaningful analysis and insights into homelessness patterns across the U.S. with 378 row and 87 col.
+        This dataset comprised of 372 Contiuums of Care (CoC) and contains observations of homelessness and demographic metrics of each CoC.
         </strong>
       </p>
+      <p>Data comes from : Urban Institute, HUD, ACS</p>
+        
 
       <div className="table-wrapper">
         <table className="data-table">

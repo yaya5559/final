@@ -10,10 +10,11 @@ import Slide6 from './sliders/Slide6';
 import Slide7 from './sliders/Slide7';
 import Conclusion from './sliders/Conclusion';
 import Slide15 from './sliders/Slide15';
+import Results from './sliders/results';
 
 
 
-const slides = [<Slide1/>, <Slide15 csvPath={'coc_data.csv'}/>, <Slide3/>, <Slide4/>, <Slide5/>, <Slide6/>, <Slide7/>, <Conclusion/>]
+const slides = [<Slide1/>, <Slide15 csvPath={'coc_data.csv'}/>, <Slide3/>, <Slide4/>, <Slide5/>, <Slide7/>, <Results/>, <Conclusion/>]
 
 const variants = {
   enter: (direction) => ({

@@ -8,7 +8,9 @@
 html, body {
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden; /* only block horizontal scroll */
+  overflow-y: auto;   /* allow vertical scroll */
+
   font-family: 'Segoe UI', sans-serif;
   background: #000; /* Optional: darker background for immersive slides */
 }
@@ -409,4 +411,52 @@ conclusion */
   text-align: center;
   font-size: 0.85rem;
   color: #9ca3af;
+}
+
+
+.glass-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.glass-card {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.25rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+}
+
+.glass-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.25rem;
+}
+
+.glass-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.glass-list-item {
+  font-size: 1.05rem;
+  color: #dcdcdc;
+  margin-bottom: 0.75rem;
+  padding-left: 0.5rem;
 }

@@ -7,21 +7,21 @@ const visualizations = [
     label: 'Homeless Rate 📊',
     src: 'map1.html',
     description:
-      'This scatter plot visualizes relationships between two numeric variables. It helps identify clusters, trends, and outliers across regions.',
+      'Homelessness rate are highest on the west coast in kansas, and a few large cities on the east coast.',
   },
   {
     key: 'heatmap',
     label: 'funding per person map🗺️',
     src: 'funding_per_person_map.html',
     description:
-      'The heat map displays the spatial distribution of values across different regions. It’s ideal for identifying geographic patterns.',
+      'funding is concentrated mostly on east coast in the deep south, and in areas with a high population density.',
   },
   {
     key: 'bar',
     label: 'scatterplot of funding per person and homeless rate📉',
     src: 'scatterplot_of_funding_per_person_and_homeless_rate.html',
     description:
-      'This bar chart compares categorical data, highlighting differences in magnitude or frequency. Great for quick comparisons.',
+      'Even though there is no Strong realtionship between federal housing and homelessness, we suspect there is bigger factors in play.',
   },
 ];
 
@@ -67,7 +67,7 @@ export default function Slide3() {
             color: '#ffffff',
           }}
         >
-          Explore Visualizations
+          Exploratory Data Analysis
         </h1>
         <p
           style={{
@@ -161,6 +161,7 @@ export default function Slide3() {
               title={selectedVis.label}
               src={selectedVis.src}
               style={{
+                height: '100%',
                 flexGrow: 1,
                 border: 'none',
                 borderRadius: '16px',
@@ -208,7 +209,7 @@ export default function Slide3() {
             >
               📌 Description
             </h3>
-            <p color='ffffff'>{selectedVis.description}</p>
+            <p color='#ffffff'>{selectedVis.description}</p>
           </motion.div>
         </AnimatePresence>
       </div>
