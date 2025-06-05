@@ -10,7 +10,7 @@ import Slide6 from './sliders/Slide6';
 import Slide7 from './sliders/Slide7';
 import Conclusion from './sliders/Conclusion';
 import Slide15 from './sliders/Slide15';
-import Results from './sliders/results';
+import Results from './sliders/Results';
 
 
 
