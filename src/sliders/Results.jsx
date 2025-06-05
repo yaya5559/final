@@ -25,7 +25,7 @@ const cardVariants = {
   }),
 };
 
-function InsightsSlide() {
+function Results() {
   return (
     <div className="glass-container">
       {[insights, futureVariables].map((list, index) => (
@@ -53,4 +53,4 @@ function InsightsSlide() {
   );
 }
 
-export default InsightsSlide;
+export default Results;
